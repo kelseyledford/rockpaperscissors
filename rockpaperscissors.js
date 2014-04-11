@@ -1,5 +1,5 @@
 var userChoice = prompt("Do you choose rock, paper, scissors, lizard or Spock?");
-var compterChoice = Math.random();
+var computerChoice = Math.random();
 if (computerChoice >= 0, computerChoice <= 0.2) {
 	computerChoice="rock";
 } else if (computerChoice >= 0.21, computerChoice <= 0.4) {
@@ -14,52 +14,52 @@ if (computerChoice >= 0, computerChoice <= 0.2) {
 
 var compare = function (choice1, choice2) {
 	if (choice1 === choice2)
-		{alert ("The result is a tie!");}
+		{document.write ("The result is a tie!");}
 	if (choice1 === "rock")
 		if (choice2 === "paper")
-			{alert ("Paper covers rock");}
+			{document.write ("Paper covers rock");}
 		else if (choice2 === "scissors")
-			{alert ("Rock crushes scissors");}
+			{document.write ("Rock crushes scissors");}
 		else if (choice2 === "lizard")
-			{alert ("Rock crushes lizard");}
+			{document.write ("Rock crushes lizard");}
 		else
-			{alert ("Spock vaporizes rock");}
+			{document.write ("Spock vaporizes rock");}
 	if (choice1 === "paper")
 		if (choice2 === "rock")
-			{alert ("Paper covers rock");}
+			{document.write ("Paper covers rock");}
 		else if (choice2 === "scissors")
-			{alert ("Scissors cuts paper");}
+			{document.write ("Scissors cuts paper");}
 		else if (choice2 === "lizard")
-			{alert ("Lizard eats paper");}
+			{document.write ("Lizard eats paper");}
 		else
-			{alert ("Paper disproves Spock");}
+			{document.write ("Paper disproves Spock");}
 	if (choice1 ==="scissors")
 		if (choice2 === "paper")
-			{alert ("Scissors cuts paper");}
+			{document.write ("Scissors cuts paper");}
 		else if (choice2 === "rock")
-			{alert ("Rock crushes scissors");}
+			{document.write ("Rock crushes scissors");}
 		else if (choice2 === "lizard")
-			{alert ("Scissors decapitate lizard");}
+			{document.write ("Scissors decapitate lizard");}
 		else
-			{alert ("Spock smashes scissors");}
+			{document.write ("Spock smashes scissors");}
 	if (choice1 ==="lizard")
 		if (choice2 === "paper")
-			{alert ("Lizard eats paper");}
+			{document.write ("Lizard eats paper");}
 		else if (choice2 === "rock")
-			{alert ("Rock crushes lizard");}
+			{document.write ("Rock crushes lizard");}
 		else if (choice2 === "scissors")
-			{alert ("Scissors decapitate lizard");}
+			{document.write ("Scissors decapitate lizard");}
 		else
-			{alert ("Lizard poisons Spock");}
+			{document.write ("Lizard poisons Spock");}
 	if (choice1 ==="spock")
 		if (choice2 === "paper")
-			{alert ("Paper disproves Spock");}
+			{document.write ("Paper disproves Spock");}
 		else if (choice2 === "rock")
-			{alert ("Spock vaporizes rock");}
+			{document.write ("Spock vaporizes rock");}
 		else if (choice2 === "lizard")
-			{alert ("Lizard poisons Spock");}
+			{document.write ("Lizard poisons Spock");}
 		else
-			{alert ("Spock smashes scissors");}
+			{document.write ("Spock smashes scissors");}
 };
 
 compare(userChoice, computerChoice)
