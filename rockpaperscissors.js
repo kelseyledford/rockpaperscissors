@@ -1,33 +1,33 @@
 //"You win/lose" notification, preferably under the logo
 //2+ user game
-//Fix image so that it is centered
-
+//Get rid of little white line after text
+//Change so that userChoice is determined by which of the pictures/divs the user chooses
 
 
 window.onload = function(){
 	var userChoice;
+	var computerChoice; 
 
 	var logo = document.getElementById("logo");
 	logo.onclick = function clickToChoose() {
 		userChoice = prompt("Do you choose rock, paper, scissors, lizard or Spock?");
 		userChoice = userChoice.toLowerCase();
+		computerChoice = Math.random();
+		if (computerChoice >= 0, computerChoice <= 0.2) {
+			computerChoice="rock";
+		} else if (computerChoice >= 0.21, computerChoice <= 0.4) {
+			computerChoice="paper";
+		} else if (computerChoice >= 0.41, computerChoice <= 0.6) {
+			computerChoice="scissors";
+		} else if (computerChoice >= 0.61, computerChoice <= 0.8) {
+			computerChoice="lizard";
+		} else {
+			computerChoice="spock";
+		};
+		console.log(computerChoice);
 		compare(userChoice, computerChoice);
 	};
 
-	var computerChoice = Math.random();
-	if (computerChoice >= 0, computerChoice <= 0.2) {
-		computerChoice="rock";
-	} else if (computerChoice >= 0.21, computerChoice <= 0.4) {
-		computerChoice="paper";
-	} else if (computerChoice >= 0.41, computerChoice <= 0.6) {
-		computerChoice="scissors";
-	} else if (computerChoice >= 0.61, computerChoice <= 0.8) {
-		computerChoice="lizard";
-	} else {
-		computerChoice="spock";
-	}
-
-	console.log(computerChoice)
 
 	var compare = function (choice1, choice2) {
 		if (choice1 === "rock")
