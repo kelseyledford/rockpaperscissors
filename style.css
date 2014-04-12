@@ -5,7 +5,7 @@ body {
 	width: 800px;
 	margin: 0 auto;
 }
-#notify {
+p {
 	text-align: center;
 	color: white;
 	font-family: Arial, sans-serif;
@@ -16,4 +16,11 @@ body {
 #logo {
 	width: 800px;
 	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#line2 {
+	font-size: 25px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	font-style: italic;
 }

@@ -1,6 +1,4 @@
 //"You win/lose" notification, preferably under the logo
-//If result is a tie, repeat the game
-//Play again? choice
 //2+ user game
 //Fix image so that it is centered
 
@@ -33,61 +31,111 @@ window.onload = function(){
 
 	var compare = function (choice1, choice2) {
 		if (choice1 === "rock")
-			if (choice2 === "paper")
-				{document.getElementById("notify").innerHTML="Paper covers rock";}
-			else if (choice2 === "scissors" || choice2 === "sissors" || choice2 === "sisors")
-				{document.getElementById("notify").innerHTML="Rock crushes scissors";}
-			else if (choice2 === "lizard" || choice2 === "lisard" || choice2 === "lizzard")
-				{document.getElementById("notify").innerHTML="Rock crushes lizard";}
-			else if (choice2 === "spock" || choice1 === "spoc" || choice1 === "spok")
-				{document.getElementById("notify").innerHTML="Spock vaporizes rock";}
-			else
-				{document.getElementById("notify").innerHTML="Tie!";}
+			if (choice2 === "paper"){
+				document.getElementById("notify").innerHTML="Paper covers rock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "scissors") {
+				document.getElementById("notify").innerHTML="Rock crushes scissors";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "lizard") {
+				document.getElementById("notify").innerHTML="Rock crushes lizard";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "spock") {
+				document.getElementById("notify").innerHTML="Spock vaporizes rock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else {
+				document.getElementById("notify").innerHTML="Tie!";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
 		else if (choice1 === "paper")
-			if (choice2 === "rock")
-				{document.getElementById("notify").innerHTML="Paper covers rock";}
-			else if (choice2 === "scissors" || choice2 === "sissors" || choice2 === "sisors")
-				{document.getElementById("notify").innerHTML="Scissors cuts paper";}
-			else if (choice2 === "lizard" || choice2 === "lisard" || choice2 === "lizzard")
-				{document.getElementById("notify").innerHTML="Lizard eats paper";}
-			else if (choice2 === "spock" || choice1 === "spoc" || choice1 === "spok")
-				{document.getElementById("notify").innerHTML="Paper disproves Spock";}
-			else
-				{document.getElementById("notify").innerHTML="Tie!";}
-		else if (choice1 ==="scissors" || choice2 === "sissors" || choice2 === "sisors")
-			if (choice2 === "paper")
-				{document.getElementById("notify").innerHTML="Scissors cuts paper";}
-			else if (choice2 === "rock")
-				{document.getElementById("notify").innerHTML="Rock crushes scissors";}
-			else if (choice2 === "lizard" || choice2 === "lisard" || choice2 === "lizzard")
-				{document.getElementById("notify").innerHTML="Scissors decapitate lizard";}
-			else if (choice2 === "spock" || choice1 === "spoc" || choice1 === "spok")
-				{document.getElementById("notify").innerHTML="Spock smashes scissors";}
-			else
-				{document.getElementById("notify").innerHTML="Tie!";}
-		else if (choice1 ==="lizard" || choice2 === "lisard" || choice2 === "lizzard")
-			if (choice2 === "paper")
-				{document.getElementById("notify").innerHTML="Lizard eats paper";}
-			else if (choice2 === "rock")
-				{document.getElementById("notify").innerHTML="Rock crushes lizard";}
-			else if (choice2 === "scissors" || choice2 === "sissors" || choice2 === "sisors")
-				{document.getElementById("notify").innerHTML="Scissors decapitate lizard";}
-			else if (choice2 === "spock" || choice1 === "spoc" || choice1 === "spok")
-				{document.getElementById("notify").innerHTML="Lizard poisons Spock";}
+			if (choice2 === "rock") {
+				document.getElementById("notify").innerHTML="Paper covers rock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "scissors") {
+				document.getElementById("notify").innerHTML="Scissors cuts paper";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "lizard") {
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+				document.getElementById("notify").innerHTML="Lizard eats paper";
+			}
+			else if (choice2 === "spock") {
+				document.getElementById("notify").innerHTML="Paper disproves Spock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else {
+				document.getElementById("notify").innerHTML="Tie!";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+		else if (choice1 ==="scissors" || choice1 === "sissors" || choice1 === "sisors")
+			if (choice2 === "paper") {
+				document.getElementById("notify").innerHTML="Scissors cuts paper";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "rock") {
+				document.getElementById("notify").innerHTML="Rock crushes scissors";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "lizard") {
+				document.getElementById("notify").innerHTML="Scissors decapitate lizard";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "spock") {
+				document.getElementById("notify").innerHTML="Spock smashes scissors";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else {
+				document.getElementById("notify").innerHTML="Tie!";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+		else if (choice1 ==="lizard" || choice1 === "lisard" || choice1 === "lizzard")
+			if (choice2 === "paper") {
+				document.getElementById("notify").innerHTML="Lizard eats paper";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "rock") {
+				document.getElementById("notify").innerHTML="Rock crushes lizard";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "scissors") {
+				document.getElementById("notify").innerHTML="Scissors decapitate lizard";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "spock") {
+				document.getElementById("notify").innerHTML="Lizard poisons Spock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
 			else
 				{document.getElementById("notify").innerHTML="Tie!";}
 		else if (choice1 === "spock" || choice1 === "spoc" || choice1 === "spok")
-			if (choice2 === "paper")
-				{document.getElementById("notify").innerHTML="Paper disproves Spock";}
-			else if (choice2 === "rock")
-				{document.getElementById("notify").innerHTML="Spock vaporizes rock";}
-			else if (choice2 === "lizard" || choice2 === "lisard" || choice2 === "lizzard")
-				{document.getElementById("notify").innerHTML="Lizard poisons Spock";}
-			else if (choice2 === "scissors" || choice2 === "sissors" || choice2 === "sisors")
-				{document.getElementById("notify").innerHTML="Spock smashes scissors";}
-			else
-				{document.getElementById("notify").innerHTML="Tie!";}
-		else 
-			{document.getElementById("notify").innerHTML="Sorry, I didn't understand you.";}
+			if (choice2 === "paper") {
+				document.getElementById("notify").innerHTML="Paper disproves Spock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "rock") {
+				document.getElementById("notify").innerHTML="Spock vaporizes rock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "lizard") {
+				document.getElementById("notify").innerHTML="Lizard poisons Spock";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else if (choice2 === "scissors") {
+				document.getElementById("notify").innerHTML="Spock smashes scissors";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+			else {
+				document.getElementById("notify").innerHTML="Tie!";
+				document.getElementById("line2").innerHTML="Click on the picture to play again!";
+			}
+		else { 
+			document.getElementById("notify").innerHTML="Sorry, I didn't understand you.";
+			document.getElementById("line2").innerHTML="Click on the picture to try again!";
+		}
 	};
 }
