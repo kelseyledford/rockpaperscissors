@@ -23,18 +23,41 @@ body {
 #columnL {
 	float: left;
 	width: 175px;
-	margin-top: 180px;
+	margin-top: 160px;
 	font-size: 30px;
+}
+#winlose {
+	font-size: 25px;
 }
 #logo {
 	width: 600px;
 	float: right;
 }
-#usercount {
-
+.circle {
+	width: 117px;
+	height: 117px;
+	z-index: 1;
+	position: absolute;
 }
-#compcount {
-
+#rock {
+	margin-left: 418px;
+	margin-top: 73px;
+}
+#paper {
+	margin-left: 536px;
+	margin-top: 160px;
+}
+#scissors {
+	margin-left: 490px;
+	margin-top: 290px;
+}
+#lizard {
+	margin-left: 350px;
+	margin-top: 290px;
+}
+#spock {
+	margin-left: 300px;
+	margin-top: 160px;
 }
 #line2 {
 	font-size: 25px;
